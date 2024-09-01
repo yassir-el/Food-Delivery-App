@@ -1,0 +1,10 @@
+<div class="order-list-container">
+    <h2>Order List</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let order of orders">
+        {{ order.name }} - {{ order.status }}
+        <button class="btn btn-primary float-right" (click)="viewOrderDetails(order)">View Details</button>
+      </li>
+    </ul>
+  </div>
+  

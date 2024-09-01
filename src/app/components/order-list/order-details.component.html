@@ -1,0 +1,8 @@
+<div class="order-details-container">
+    <h2>Order Details</h2>
+    <p><strong>Order ID:</strong> {{ order.id }}</p>
+    <p><strong>Customer:</strong> {{ order.customerName }}</p>
+    <p><strong>Status:</strong> {{ order.status }}</p>
+    <button class="btn btn-success" (click)="markAsDelivered()">Mark as Delivered</button>
+  </div>
+  
